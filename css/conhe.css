@@ -1,0 +1,16 @@
+.card {
+    width: 100%; /* ou a largura desejada */
+}
+
+#options-container {
+    display: block; /* Exibir as opções abaixo uma da outra */
+    margin-top: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.btn-op {
+    display: block; 
+    width: 100%; 
+    margin-top: 20px;
+    background-color: #9583b6;
+    border-top: 1px solid rgb(35, 35, 35);
+}
