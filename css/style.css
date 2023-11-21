@@ -6,17 +6,34 @@ body{
     width: 100vw;
     height: 100vh;
     background-image: url(../img/Inicio-fundo.png);
-    background-size: 100%;
+    background-size:cover;
     background-repeat: no-repeat;
+}
+
+main{
+    
 }
 
 nav{
     background-color: #00000045;
 }
 
-.card{
-    background: linear-gradient(180deg, rgba(0, 151, 178, 0) 0%, #0097B2 100%);
+.barraPesquisa{
+    width: 100%;
+}
 
+header form{
+    border: 1px solid black;
+    width: 50%;
+}
+
+.card{
+    background-color: #0097B2;
+
+}
+
+.titulo{
+    color: #FFBD59;
 }
 
 .card-img-top {
@@ -29,10 +46,12 @@ footer {
     bottom: 0;
     width: 100%;
     background: #00000045;
-
 }
 
 .footer-left {
     padding-left: 20px;
     padding-right: 20px;
+    height: 10vh;
+    background: linear-gradient(#CB6CE6, #0097B2);
 }
+

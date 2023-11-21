@@ -11,61 +11,67 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="index.html">
-        <img src="/img/logo-removebg-preview 2.png" alt="Logo" width="35" height="35"
-          class="d-inline-block align-text-top img-fluid"> Games Education
-      </a>
+  <header>
 
-      <form class="d-flex">
-        <input class="form-control" type="text" placeholder="Pesquise Aqui"/>
-        <button class="btn btn-primary"> Pesquisar</button>
-      </form>
+    <nav class="navbar">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="/img/logo-removebg-preview 2.png" alt="Logo" width="35" height="35"
+            class="d-inline-block align-text-top img-fluid"> Games Education
+        </a>
 
-      <span class="navbar-text">
-        <a href="#">Usuario Logado</a>
-      </span>
+        <form class="d-flex">
+          <input class="form-control barraPesquisa" type="text" placeholder="Pesquise Aqui"/>
+          <button class="btn btn-primary"> Pesquisar</button>
+        </form>
+
+        <span class="navbar-text">
+          <a href="#">Usuario Logado</a>
+        </span>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="/img/mat.png" class="card-img-top card-img img-fluid" alt="Matemática">
+                  <div class="card-body">
+                  <h5 class=" h4 card-title titulo">Matemática</h5>
+                  <p class="card-text">Explore conceitos matemáticos de maneira divertida e interativa através de nossos jogos educativos.</p>
+                  <a href="#" class="btn btn-primary">Jogar Agora</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="./img/criatividade1.png" class="card-img-top card-img img-fluid" alt="Criatividade">
+                  <div class="card-body">
+                  <h5 class="h4 card-title titulo">Criatividade</h5>
+                  <p class="card-text">Aprimore sua criatividade com jogos projetados para desafiar sua imaginação e pensamento inovador.</p>
+                  <a href="#" class="btn btn-primary">Jogar Agora</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="/img/conhecimento1.png" class="card-img-top card-img img-fluid" alt="Conhecimentos Gerais">
+                  <div class="card-body">
+                  <h5 class="h4 card-title titulo">Conhecimentos Gerais</h5>
+                  <p class="card-text">Viaje pelo tempo e aprenda sobre eventos históricos importantes com nossos jogos educativos de história.</p>
+                  <a href="conhecimentosGerais.html" class="btn btn-primary">Jogar Agora</a>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
-  </nav>
+  </main>
 
-  <div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="/img/matematica.png" class="card-img-top card-img img-fluid" alt="Matemática">
-                <div class="card-body">
-                <h5 class=" h4 card-title">Matemática</h5>
-                <p class="card-text">Explore conceitos matemáticos de maneira divertida e interativa através de nossos jogos educativos.</p>
-                <a href="#" class="btn btn-primary">Jogar Agora</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="./img/criatividade.png" class="card-img-top card-img img-fluid" alt="Criatividade">
-                <div class="card-body">
-                <h5 class="h4 card-title">Criatividade</h5>
-                <p class="card-text">Aprimore sua criatividade com jogos projetados para desafiar sua imaginação e pensamento inovador.</p>
-                <a href="#" class="btn btn-primary">Jogar Agora</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="/img/conhecimento.png" class="card-img-top card-img img-fluid" alt="Conhecimentos Gerais">
-                <div class="card-body">
-                <h5 class="h4 card-title">Conhecimentos Gerais</h5>
-                <p class="card-text">Viaje pelo tempo e aprenda sobre eventos históricos importantes com nossos jogos educativos de história.</p>
-                <a href="conhecimentosGerais.html" class="btn btn-primary">Jogar Agora</a>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-
-  <footer class="text-light py-3 footer-left">
-        <div>
+  <footer class="text-light py-3 footer-left d-flex align-items-center">
+        <div style="width: 100%;">
             <div class="row">
                 <div class="col-md-6">
                     <p class="mb-0">Criado por José Marcolino Coelho dos Santos e Augusto Paiva Ribeiro</p>
@@ -83,7 +89,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
