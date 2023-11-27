@@ -2,12 +2,12 @@
 /*   PRINCIPAL     */
 
 main{
-    border:1px solid green;
     background: url("/img/background/Inicio-fundo.png") no-repeat top center/cover;
 }
 
 #containerMain{
-    margin-top: 25vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
 }
 
 .card{
