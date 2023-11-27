@@ -29,6 +29,8 @@ main{
 .hover-rotate:hover {
     transition: transform 0.2s ease;
     cursor: pointer;
-  }
+}
 
-
+.tam{
+    height: 40vh;
+}

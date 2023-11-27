@@ -1,0 +1,32 @@
+main{
+    background: url(/img/background/fundo-conhecimentos.svg) no-repeat top center/cover ;
+}
+
+
+#container{
+    padding-top: 25vh;
+}
+
+.card{
+    height: 65vh;
+    --bs-card-title-spacer-y: 0;
+    background-color: #0097B2;
+    filter:drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+#secao-cards{
+    width: 100%;
+}
+
+.card-img-top {
+    height: 83%; 
+    object-fit: cover;
+}
+
+.icon-tam{
+    font-size: 60px;
+}
+
+.hover-rotate:hover {
+    cursor: pointer;
+}
