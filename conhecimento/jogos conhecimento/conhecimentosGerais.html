@@ -4,83 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Games Education Start</title>
+  <title>Sabe Tudo Quiz</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../../css/styleGeral.css">
   <link rel="stylesheet" href="../../css/conhe.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand" href="index.html">
-          <img src="/img/logo-removebg-preview 2.png" alt="Logo" width="35" height="35"
-            class="d-inline-block align-text-top img-fluid"> Games Education
+  
+  <header class="d-flex justify-content-center rounded position-fixed top-0 start-50 translate-middle mt-5">
+
+    <nav class="d-flex justify-content-between align-items-center">
+
+      <div id="nav1" class="d-flex justify-content-between align-items-center">
+
+        <a id="teste" href="../../index.html" style="margin-right: 1ch;">
+          <img src="/img/icons/logo.png" alt="Logo" class="logo">
         </a>
 
-        <form class="d-flex">
-          <input class="form-control" type="text" placeholder="Pesquise Aqui"/>
-          <button class="btn btn-primary"> Pesquisar</button>
+        <form class="d-flex col-11 position-relative">
+          <input class="form-control barraPesquisa" type="text" placeholder="Pesquise Aqui.."/>
+          <button class="btn position-absolute configuracoes"><img src="/img/icons/lupa.png" class="" alt="lupa de pesquisa"></button>
         </form>
 
-        <span class="navbar-text">
-          <a href="#">Usuario Logado</a>
-        </span>
       </div>
+
+      <div id="nav2" class="d-flex justify-content-between align-items-center">
+
+        <p id="sobre" class="d-flex align-items-center fw-bold rounded hover-back">
+          <a href="#" class="text-decoration-none c-orange">SOBRE</a>
+        </p>
+
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+          <div class="rounded-circle overflow-hidden" style="border: 1px solid black; height: 40px; width: 40px;">
+            <img src="/img/icons/perfil.svg" alt="imagem de perfil" class="w-100 h-100">
+          </div>
+          <p style="margin-left: 1ch;" class="text-light">USUARIO LOGADO</p>
+        </a>
+
+      </div>
+
     </nav>
+
   </header>
 
-  <div class="container my-5">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="h4 card-title" id="question" style="text-align: center;">Pergunta Aqui</h5>
-            <div class="btn-group-vertical" role="group" aria-label="Vertical button group" id="options-container">
-             
+  <main class="d-flex align-items-center justify-content-center">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="h4 card-title" id="question" style="text-align: center;">Pergunta Aqui</h5>
+              <div class="btn-group-vertical" role="group" aria-label="Vertical button group" id="options-container">
+              
+              </div>
+              <button id="next-button" class="btn btn-primary my-3" style="width: 100%;" onclick="nextQuestion()">Próxima Pergunta</button>
             </div>
-            <button id="next-button" class="btn btn-primary my-3" style="width: 100%;" onclick="nextQuestion()">Próxima Pergunta</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
+</main>
 
 
-  <footer class="text-light py-3 footer-left d-flex align-items-center">
-        <div style="width: 100%;">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">Criado por José Marcolino Coelho dos Santos e Augusto Paiva Ribeiro</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="#" class="text-light me-2">
-                        Facebook
-                    </a>
-                    <a href="#" class="text-light me-2">
-                        Instagram
-                    </a>
-                    <a href="#" class="text-light">
-                        Twitter
-                    </a>
-                </div>
+  <footer class="text-light py-3 footer-left d-flex align-items-center position-static">
+    <div style="width: 100%;">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0">Criado por José Marcolino Coelho dos Santos e Augusto Paiva Ribeiro</p>
+            </div>
+
+            <div id="bloco-rede-social" class="col-md-2 d-flex flex-column align-items-center">
+              <p class="fw-bold">REDES SOCIAIS</p>
+              <div id="rede" style="height: 4vh;" class="redes-sociais d-flex">
+                  <a href="#" target="_blank" class="text-light me-2 text-decoration-none">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                  <a href="#" target="_blank" class="text-light me-2 text-decoration-none">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                  <a href="#" target="_blank" class="text-light text-decoration-none">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+              </div>
+
             </div>
         </div>
-    </footer>
+    </div>
+  </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="conhecimentoGerais.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="conhecimentoGerais.js"></script>
 </body>
 
 </html>
