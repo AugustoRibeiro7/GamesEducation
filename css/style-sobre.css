@@ -1,0 +1,35 @@
+main{
+    background: url(/img/background/sobre-fundo1.svg) no-repeat top center/cover ;
+}
+
+#img{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/sobre/Banner.svg) no-repeat top center/cover ;
+    
+}
+
+.f-chango{
+    font-family: 'Chango', sans-serif;
+}
+
+.height-100{
+    height: 100vh;
+}
+
+
+
+
+
+
+#cardCarousel {
+    overflow: hidden;
+  }
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 100%; /* Garante que os cards estão lado a lado */
+    padding: 20px; /* Espaçamento entre os cards */
+  }

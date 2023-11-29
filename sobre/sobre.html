@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos de Matemática</title>
+    <title>Sobre Nós</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styleGeral.css">
-    <link rel="stylesheet" href="../css/style-conhecimentos.css">
+    <link rel="stylesheet" href="../css/style-sobre.css">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="d-flex justify-content-center rounded position-fixed top-0 start-50 translate-middle mt-5">
@@ -31,7 +34,7 @@
           <div id="nav2" class="d-flex justify-content-between align-items-center">
     
             <p id="sobre" class="d-flex align-items-center fw-bold rounded hover-back">
-              <a href="/sobre/sobre.html" class="text-decoration-none c-orange">SOBRE</a>
+              <a href="#" class="text-decoration-none c-orange">SOBRE</a>
             </p>
     
             <a href="#" class="d-flex align-items-center text-decoration-none">
@@ -47,49 +50,26 @@
     
     </header>
 
-    <main>
-        <div id="container" class="container d-flex justify-content-center flex-column align-items-center">
-            <div id="secao-cards" class="row justify-content-between mb-5">
-                <a class="col-md-5 text-decoration-none">
-                    <div class="card hover-border">
-                        <img src="../img/cards-jogosMatematica/exploradoresNumeros.svg" class="card-img-top card-img img-fluid" alt="Matemática">
-                        <div class="card-body d-flex align-items-center justify-content-center">
-                          <h3 class="card-title text-light">Exploradores dos Números</h3>
-                          <ion-icon class="icon-tam c-orange" name="play-circle-sharp"></ion-icon>
-                        </div>
-                    </div>
-                </a>
-                <a id="rotateCard2" class="col-md-5 text-decoration-none">
-                    <div class="card hover-border">
-                        <img src="../img/cards-jogosMatematica/mathLand.svg" class="card-img-top card-img img-fluid" alt="Criatividade">
-                        <div class="card-body d-flex justify-content-center align-items-center">
-                          <h3 class="card-title text-light">MathLand: Missão Aritmética</h3>
-                          <ion-icon class="icon-tam c-orange" name="play-circle-sharp"></ion-icon>
-                        </div>
-                    </div>
-                </a>
+    <main class="d-flex flex-column align-items-center">
+        <div id="img" class="d-flex justify-content-center align-items-end f-chango">
+            <h1 style="width: 80%; font-size: 45px; margin-bottom: 5vh;" class="text-light text-center">Com a Games Education, o aprendizado ganha vida, tornando-se envolvente e divertido.</h1>
+        </div>
+
+        <div style="width: 90%;" class="height-100 d-flex f-chango align-items-center">
+
+            <div>
+                <p class="h3 c-orange">Nossa plataforma vai além dos livros e salas de aula, oferecendo uma abordagem inovadora para o aprendizado. Embarque nesta jornada educativa que desafia, diverte e ilumina.</p>
+                <p class=" text-light mt-5">Transformando aprendizado em aventura, nossa plataforma oferece uma experiência única de jogos educativos, onde o conhecimento é conquistado de maneira divertida.</p>
             </div>
-    
-            <div id="secao-cards" class="row justify-content-between mb-5">
-                <a class="col-md-5 text-decoration-none">
-                    <div class="card hover-border">
-                        <img src="../img/cards-jogosMatematica/desafiosGeometricos.svg" class="card-img-top card-img img-fluid" alt="Matemática">
-                        <div class="card-body d-flex justify-content-center align-items-center">
-                          <h3  class="card-title text-light">Desafios Geométricos</h3>
-                          <ion-icon class="icon-tam c-orange" name="play-circle-sharp"></ion-icon>
-                        </div>
-                    </div>
-                </a>
-                <a class="col-md-5 text-decoration-none">
-                    <div class="card hover-border">
-                        <img src="../img/cards-jogosMatematica/desvendandoEquacoes.svg" class="card-img-top card-img img-fluid" alt="Criatividade">
-                        <div class="card-body d-flex justify-content-center align-items-center">
-                          <h3 class="card-title text-light">Desvendando Equações</h3>
-                          <ion-icon class="icon-tam c-orange" name="play-circle-sharp"></ion-icon>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            <img src="/img/sobre/pessoaJogando.svg" alt="imagem de um garoto sorridente jogando com um controle de video game"> 
+
+        </div>
+
+        <div style="height: 100vh; width: 70%; margin-bottom: 25vh;" class="d-flex flex-column align-items-center justify-content-center">
+            <img src="/img/sobre/criancasCorrendo.svg" alt="">
+            <p class="f-chango c-orange h3 text-center">Cada jogo em nossa plataforma é uma peça do quebra-cabeça educacional, projetado para estimular a mente e nutrir a paixão pelo conhecimento. Descubra uma nova dimensão de aprendizado conosco.</p>
+
+
         </div>
 
     </main>
@@ -134,5 +114,13 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     
+
+    <script>
+        $('#cardCarousel').on('slide.bs.carousel', function (e) {
+          var nextCardWidth = $(e.relatedTarget).outerWidth();
+          $(this).find('.carousel-inner').css('transform', 'translateX(-' + nextCardWidth * e.to + 'px)');
+        });
+    </script>
+
 </body>
 </html>
